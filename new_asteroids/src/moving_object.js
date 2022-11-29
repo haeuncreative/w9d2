@@ -7,9 +7,11 @@ class MovingObject {
     }
 
     draw = function(context) {
+        // debugger
         context.beginPath();
+        context.fillStyle = this.color;
         context.arc(this.pos[0], this.pos[1], this.radius, 0, 2*Math.PI, true);
-        context.fillstyle = this.color;
+        // context.arc(100, 100, 50, 0, 2*Math.PI, true);
         context.fill()
     }
 
